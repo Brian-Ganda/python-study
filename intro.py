@@ -64,3 +64,17 @@ print(a1)
 email= "ronaldngala@gmail.com"
 #print(email.count('@'))
 print(len(email))
+
+
+#concantetion practice
+first_name="Brian"
+last_name="Kitetu"
+full_name=first_name+ " "+ last_name
+print(full_name)
+
+#indexing
+word = "PYTHON"
+print(word[0])
+print(word[-1])
+
+#
