@@ -47,15 +47,15 @@ else:
 # Prints "Integer Detected" if value is an integer.
 # Prints "Unknown Type" for any other type.
 
-variable ="34"
-if isinstance(variable,str):
-    print("String Detected")
-elif isinstance(variable,int):
-    print("Interger Detected")
-else: 
-    print("Unknown Type")
 
+value=5000
 
+if type(value)==str:
+    print("str detected")
+elif type(value) ==int:
+    print("interger detected")
+else:
+    print("unknown type")
 
 # 5.Given x = 7 and y = 14, write nested conditional statements that print:
 # "x and y are both even" if both x and y are even numbers.
@@ -63,10 +63,14 @@ else:
 # "Neither x nor y are even" if both are odd.
 x = 7
 y = 14
-if x%2==0 and y%2==0:
-    print("x and y are both even")
-elif y%2==0:
-    print("Only y is even")
+if x%2==0:
+    if y%2==0:
+        print("x and y are both even")
+    else:
+        print("Only x is even")
 else:
-    print("Neither x nor y are even")
+    if y%2==0:
+        print("Only y is even")
+    else:
+         print("Neither x nor y are even")
 
