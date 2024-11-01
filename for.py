@@ -89,6 +89,7 @@ print(even_count)
 # Display the total quantity of the 3 above.
 
 ls1 = [ ("Jay", 20), ("Mo", 30), ("Mya", 32), ("bread", 100) ]
+
 total_quantity=0
 
 for i in ls1:
