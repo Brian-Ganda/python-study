@@ -53,3 +53,106 @@ user_input=int(input("enter number"))
 x= even_num(user_input)
 print(x)
   
+
+def sum_marks(a,b,c,d,e):
+    totalmarks= a + b + c + d + e
+    return totalmarks
+
+math=int(input("enter maths marks: "))
+eng=int(input("enter eng marks: "))
+swa=int(input("enter swa marks: "))
+sci=int(input("enter sci marks: "))
+sos=int(input("enter sos marks: "))
+
+
+x = sum_marks(math,eng,swa,sci,sos)
+print(x)
+
+
+#calculate the average
+
+def calc_average(tm,num):
+    average= tm/num
+    return average
+
+marks_average=calc_average(x,5)
+print(marks_average)
+
+#find the grade
+
+def find_grade(avg):
+    if avg>79:
+        grade="A"
+    elif avg>60 and avg<=79:
+        grade="B"
+    elif avg>49 and avg<=59:
+        grade="C"
+    elif avg>40 and avg<=49:
+        grade="D"
+    else:
+        grade="E"
+    return grade
+
+mygrade=find_grade(marks_average)
+print(mygrade)
+
+
+
+# Write a program that takes input of someone's basic salary and benefits, adds them to 
+# find the gross salary then uses  the gross salary to find the NHIF. 
+# To find the Kenya NHIF Rate using 
+
+def total_comp(a,b):
+    fullcomp=a + b
+    return fullcomp
+
+basicsalary= int(input("enter your basic salary: "))
+benefits= int(input("enter total benefits: "))
+
+gross_salary= total_comp(basicsalary,benefits)
+print(gross_salary)
+
+def find_nhif(z):
+    if z <= 5999:
+        rate = "150"
+    elif z > 6000 and z <= 7999:
+        rate = "300"
+    elif z > 8000 and z <= 11999:
+        rate = "400"
+    elif z > 12000 and z <=14999:
+        rate ="500"
+    elif z > 15000 and z <= 19999:
+        rate = "600"
+    elif z > 20000 and z <= 24999:
+        rate = "700"
+    elif z > 25000 and z <=29999:
+        rate ="800"
+    elif z > 30000 and z <=34999:
+        rate ="900"
+    elif z > 35000 and z <= 39999:
+        rate = "950"
+    elif z > 40000 and z <= 44999:
+        rate = "1000"
+    elif z > 45000 and z <=49999:
+        rate ="1100"
+    elif z > 50000 and z <=59999:
+        rate ="1200"
+    elif z > 60000 and z <= 69999:
+        rate = "1300"
+    elif z > 70000 and z <= 79999:
+        rate = "1400"
+    elif z > 80000 and z <= 89999:
+        rate ="1500"
+    elif z > 90000 and z <= 99999:
+        rate = "1600"
+    elif z > 100000:
+        rate = "1700"
+    return rate
+
+
+myrate=find_nhif(gross_salary)
+print(myrate)
+
+
+
+

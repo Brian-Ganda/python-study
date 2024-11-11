@@ -21,13 +21,26 @@ years = today_year -int( dob_split[0])
 months = today_month - int(dob_split[1])
 days = today_day -int( dob_split[2])
 
+
+
 print(f"{years} years,{months}months and {days}days")
 
 
 
 
+# Write a program that takes input of someone's basic salary and benefits, adds them to 
+# find the gross salary then uses  the gross salary to find the NHIF. 
+# To find the Kenya NHIF Rate using 
 
+def total_comp(a,b):
+    fullcomp=a + b
+    return fullcomp
 
+basicsalary= int(input("enter your basic salary: "))
+benefits= int(input("enter total benefits: "))
+
+gross_salary= total_comp(basicsalary,benefits)
+print(gross_salary)
 
 
 
